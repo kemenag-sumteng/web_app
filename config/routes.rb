@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
+
+	devise_scope :user do
+	  get 'masuk', to: 'devise/sessions#new'
+	  get 'daftar', to: 'devise/registrations#new'
+	end
+
   devise_for :users
+  
   get 'halaman/utama'
 
   root 'halaman#utama'
