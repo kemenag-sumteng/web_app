@@ -12,3 +12,10 @@ body {
 		font-size: 3.5rem;
 	}
 }
+main > .container {
+  padding: 60px 15px 0;
+}
+
+code {
+  font-size: 80%;
+}
